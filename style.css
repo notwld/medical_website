@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    transition: 0.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to left, #f8aeff 0%, #67a1ff 100%);
+}
+.line{
+    
+    text-align: center;
+    height: 25px;
+    background-color: rgb(175, 129, 218);
+}
+div{
+    display: block;
+}
+h1{
+    margin: 0%;
+    padding: 0%;
+    font-family: Montserrat;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+li{
+
+    font-style: bold;
+    font-family: Montserrat;
+    padding:5px 10px 5px 10px;; 
+    margin: 5px 10px 5px 10px;
+}
+li:hover{
+    transform: translateY(5px);
+
+}
+h1 img{
+    width: 50px;
+    height: 45px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+p{
+    text-align: justify;
+}
+.home_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.para{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: flex-start;
+    padding: 20px;
+}
+.para h1{
+    font-size: 64px;
+    font-family: Montserrat;
+}
+.para h1 span{
+    color: #0d00ff;
+}
+.para p{
+    font-family: Montserrat;
+    padding: 5px;
+}
+.para button{
+    align-self: baseline;
+    background-color: #0d00ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin: 8px;
+    cursor: pointer;
+}
+.para button:hover{
+    background-color: #0d00ff00;
+    border: 1px solid black;
+}
+.pic img{
+    width: 250px;;
+    height: 250px;
+    animation: 2s ease-in-out infinite alternate;
+    animation-name: move;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+
+.image_grid{
+    display: flex-grid;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.image_grid img{
+    width: 150px;
+    margin: 15px;
+    animation-name: move;
+}
+button{
+    background-color: #0d00ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin: 8px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #0d00ff00;
+    border: 1px solid black;
+    color: black;
+}
+.image_grid h1{
+    font-family: Montserrat;
+    font-size: 64px;
+}
+.image_grid p{
+    padding: 50px;
+    text-align: center;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.about h1{
+    font-family: Montserrat;
+    font-size: 64px;
+}
+.about p{
+    font-family: Montserrat;
+    padding: 25px;
+
+}
+
+.about ul{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    list-style: disc;
+    padding: 20px;
+}
+.about ul li{
+    font-family: Montserrat;
+    font-size: 20px;
+    padding: 5px;
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    padding: 20px;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.services h1{
+    font-family: Montserrat;
+    font-size: 64px;
+}
+.services p{
+    font-family: Montserrat;
+    padding: 25px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 35px;
+}
+.grid img{
+    width: 150px;
+    height: 150px;
+}
+.grid strong{
+    text-align: left;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 20px;
+    margin-left: 100px;
+}
+form h1{
+    font-family: Montserrat;
+    font-size: 64px;
+}
+form input, form textarea{
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    font-family: Montserrat;
+}
+.contact img{
+    width: 250px;
+    height: 250px;
+}
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+}
+footer ul{
+    display: flex;
+    flex-direction: flex-start;
+}
